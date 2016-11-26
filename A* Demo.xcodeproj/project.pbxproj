@@ -12,9 +12,9 @@
 		B627117C1DDC6C4600C9B3C0 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B627117A1DDC6C4600C9B3C0 /* SDL2_ttf.framework */; };
 		B627117E1DDC6C4F00C9B3C0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B627117D1DDC6C4F00C9B3C0 /* OpenGL.framework */; };
 		B62711811DDC7D0100C9B3C0 /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B627117F1DDC7D0100C9B3C0 /* Square.cpp */; };
-		B62711841DDD5A1000C9B3C0 /* PriorityQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B62711821DDD5A1000C9B3C0 /* PriorityQueue.cpp */; };
 		B62711861DE05A6300C9B3C0 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62711851DE05A6300C9B3C0 /* SDL2.framework */; };
 		B62711891DE0874500C9B3C0 /* LButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B62711871DE0874500C9B3C0 /* LButton.cpp */; };
+		B6D0D98E1DE9E03F0072486D /* PriorityQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6D0D98C1DE9E03F0072486D /* PriorityQueue.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,11 +37,11 @@
 		B627117D1DDC6C4F00C9B3C0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		B627117F1DDC7D0100C9B3C0 /* Square.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Square.cpp; sourceTree = "<group>"; };
 		B62711801DDC7D0100C9B3C0 /* Square.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Square.hpp; sourceTree = "<group>"; };
-		B62711821DDD5A1000C9B3C0 /* PriorityQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PriorityQueue.cpp; sourceTree = "<group>"; };
-		B62711831DDD5A1000C9B3C0 /* PriorityQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PriorityQueue.hpp; sourceTree = "<group>"; };
 		B62711851DE05A6300C9B3C0 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		B62711871DE0874500C9B3C0 /* LButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LButton.cpp; sourceTree = "<group>"; };
 		B62711881DE0874500C9B3C0 /* LButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LButton.hpp; sourceTree = "<group>"; };
+		B6D0D98C1DE9E03F0072486D /* PriorityQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PriorityQueue.cpp; sourceTree = "<group>"; };
+		B6D0D98D1DE9E03F0072486D /* PriorityQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PriorityQueue.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				B62711851DE05A6300C9B3C0 /* SDL2.framework */,
-				B62711821DDD5A1000C9B3C0 /* PriorityQueue.cpp */,
-				B62711831DDD5A1000C9B3C0 /* PriorityQueue.hpp */,
 				B627117D1DDC6C4F00C9B3C0 /* OpenGL.framework */,
 				B62711791DDC6C4600C9B3C0 /* SDL2_image.framework */,
 				B627117A1DDC6C4600C9B3C0 /* SDL2_ttf.framework */,
@@ -87,6 +85,8 @@
 				B62711721DDC6BD600C9B3C0 /* main.cpp */,
 				B627117F1DDC7D0100C9B3C0 /* Square.cpp */,
 				B62711801DDC7D0100C9B3C0 /* Square.hpp */,
+				B6D0D98C1DE9E03F0072486D /* PriorityQueue.cpp */,
+				B6D0D98D1DE9E03F0072486D /* PriorityQueue.hpp */,
 				B62711871DE0874500C9B3C0 /* LButton.cpp */,
 				B62711881DE0874500C9B3C0 /* LButton.hpp */,
 			);
@@ -150,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B62711891DE0874500C9B3C0 /* LButton.cpp in Sources */,
-				B62711841DDD5A1000C9B3C0 /* PriorityQueue.cpp in Sources */,
+				B6D0D98E1DE9E03F0072486D /* PriorityQueue.cpp in Sources */,
 				B62711811DDC7D0100C9B3C0 /* Square.cpp in Sources */,
 				B62711731DDC6BD600C9B3C0 /* main.cpp in Sources */,
 			);
