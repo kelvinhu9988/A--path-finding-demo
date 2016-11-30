@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B62711731DDC6BD600C9B3C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B62711721DDC6BD600C9B3C0 /* main.cpp */; };
 		B627117B1DDC6C4600C9B3C0 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62711791DDC6C4600C9B3C0 /* SDL2_image.framework */; };
 		B627117C1DDC6C4600C9B3C0 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B627117A1DDC6C4600C9B3C0 /* SDL2_ttf.framework */; };
 		B627117E1DDC6C4F00C9B3C0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B627117D1DDC6C4F00C9B3C0 /* OpenGL.framework */; };
-		B62711811DDC7D0100C9B3C0 /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B627117F1DDC7D0100C9B3C0 /* Square.cpp */; };
 		B62711861DE05A6300C9B3C0 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62711851DE05A6300C9B3C0 /* SDL2.framework */; };
-		B62711891DE0874500C9B3C0 /* LButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B62711871DE0874500C9B3C0 /* LButton.cpp */; };
-		B6D0D98E1DE9E03F0072486D /* PriorityQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6D0D98C1DE9E03F0072486D /* PriorityQueue.cpp */; };
+		B6963D591DEEE3D900EE33CC /* LButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6963D521DEEE3D900EE33CC /* LButton.cpp */; };
+		B6963D5A1DEEE3D900EE33CC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6963D541DEEE3D900EE33CC /* main.cpp */; };
+		B6963D5B1DEEE3D900EE33CC /* PriorityQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6963D551DEEE3D900EE33CC /* PriorityQueue.cpp */; };
+		B6963D5C1DEEE3D900EE33CC /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6963D571DEEE3D900EE33CC /* Square.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,17 +31,18 @@
 
 /* Begin PBXFileReference section */
 		B627116F1DDC6BD600C9B3C0 /* A* Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "A* Demo"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B62711721DDC6BD600C9B3C0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B62711791DDC6C4600C9B3C0 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
 		B627117A1DDC6C4600C9B3C0 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
 		B627117D1DDC6C4F00C9B3C0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		B627117F1DDC7D0100C9B3C0 /* Square.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Square.cpp; sourceTree = "<group>"; };
-		B62711801DDC7D0100C9B3C0 /* Square.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Square.hpp; sourceTree = "<group>"; };
 		B62711851DE05A6300C9B3C0 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
-		B62711871DE0874500C9B3C0 /* LButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LButton.cpp; sourceTree = "<group>"; };
-		B62711881DE0874500C9B3C0 /* LButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LButton.hpp; sourceTree = "<group>"; };
-		B6D0D98C1DE9E03F0072486D /* PriorityQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PriorityQueue.cpp; sourceTree = "<group>"; };
-		B6D0D98D1DE9E03F0072486D /* PriorityQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PriorityQueue.hpp; sourceTree = "<group>"; };
+		B6963D511DEEE3D900EE33CC /* Georgia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Georgia.ttf; sourceTree = "<group>"; };
+		B6963D521DEEE3D900EE33CC /* LButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LButton.cpp; sourceTree = "<group>"; };
+		B6963D531DEEE3D900EE33CC /* LButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LButton.hpp; sourceTree = "<group>"; };
+		B6963D541DEEE3D900EE33CC /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B6963D551DEEE3D900EE33CC /* PriorityQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PriorityQueue.cpp; sourceTree = "<group>"; };
+		B6963D561DEEE3D900EE33CC /* PriorityQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PriorityQueue.hpp; sourceTree = "<group>"; };
+		B6963D571DEEE3D900EE33CC /* Square.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Square.cpp; sourceTree = "<group>"; };
+		B6963D581DEEE3D900EE33CC /* Square.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Square.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,16 +83,25 @@
 		B62711711DDC6BD600C9B3C0 /* A* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				B62711721DDC6BD600C9B3C0 /* main.cpp */,
-				B627117F1DDC7D0100C9B3C0 /* Square.cpp */,
-				B62711801DDC7D0100C9B3C0 /* Square.hpp */,
-				B6D0D98C1DE9E03F0072486D /* PriorityQueue.cpp */,
-				B6D0D98D1DE9E03F0072486D /* PriorityQueue.hpp */,
-				B62711871DE0874500C9B3C0 /* LButton.cpp */,
-				B62711881DE0874500C9B3C0 /* LButton.hpp */,
+				B6963D501DEEE3D900EE33CC /* src */,
 			);
 			path = "A* Demo";
 			sourceTree = "<group>";
+		};
+		B6963D501DEEE3D900EE33CC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B6963D511DEEE3D900EE33CC /* Georgia.ttf */,
+				B6963D521DEEE3D900EE33CC /* LButton.cpp */,
+				B6963D531DEEE3D900EE33CC /* LButton.hpp */,
+				B6963D541DEEE3D900EE33CC /* main.cpp */,
+				B6963D551DEEE3D900EE33CC /* PriorityQueue.cpp */,
+				B6963D561DEEE3D900EE33CC /* PriorityQueue.hpp */,
+				B6963D571DEEE3D900EE33CC /* Square.cpp */,
+				B6963D581DEEE3D900EE33CC /* Square.hpp */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -149,10 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B62711891DE0874500C9B3C0 /* LButton.cpp in Sources */,
-				B6D0D98E1DE9E03F0072486D /* PriorityQueue.cpp in Sources */,
-				B62711811DDC7D0100C9B3C0 /* Square.cpp in Sources */,
-				B62711731DDC6BD600C9B3C0 /* main.cpp in Sources */,
+				B6963D5B1DEEE3D900EE33CC /* PriorityQueue.cpp in Sources */,
+				B6963D5A1DEEE3D900EE33CC /* main.cpp in Sources */,
+				B6963D5C1DEEE3D900EE33CC /* Square.cpp in Sources */,
+				B6963D591DEEE3D900EE33CC /* LButton.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
