@@ -23,67 +23,18 @@ public:
     LButton() {};
     
     // Set bottom left position
-    void setPosition(int x, int y)
-    {
-        pos.x = x;
-        pos.y = y;
-    };
+    void setPosition(int x, int y);
     
-    int getButtonW()
-    {
-        return buttonW;
-    }
-    
-    int getButtonH()
-    {
-        return buttonH;
-    }
-    
-    SDL_Point getPos()
-    {
-        return pos;
-    }
+    int getButtonW();
+    int getButtonH();
+    SDL_Point getPos();
     
     //Handle mouse event
-    void handleMouseEvent(SDL_Event* e, bool* toStart)
-    {
-        if (e->type == SDL_MOUSEBUTTONUP)
-        {
-            int x, y;
-            SDL_GetMouseState(&x, &y);
-            
-            bool inside = true;
-            if (x <= pos.x)
-            {
-                inside = false;
-            } else if (x >= pos.x + buttonW)
-            {
-                inside = false;
-            } else if (y <= pos.y)
-            {
-                inside = false;
-            } else if (y >= pos.y + buttonH)
-            {
-                inside = false;
-            }
-            
-            
-            if (inside)
-            {
-                *toStart = true;
-            }
-            
-            
-        }
-    };
+    void handleMouseEvent(SDL_Event* e, bool* toStart);
     
     //Show button sprite
-    void render(SDL_Renderer* renderer)
-    {
-        glColor4f(159/255.0f, 164/255.0f, 172/255.0f, 1.0f);
-        SDL_Rect rect = { pos.x, pos.y, buttonW, buttonH };
-        SDL_RenderFillRect(renderer, &rect);
-    };
+    void render(SDL_Renderer* renderer);
+    
     
 private:
     //Top left position

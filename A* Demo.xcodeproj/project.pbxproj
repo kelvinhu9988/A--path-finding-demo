@@ -13,7 +13,6 @@
 		B62711861DE05A6300C9B3C0 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62711851DE05A6300C9B3C0 /* SDL2.framework */; };
 		B6963D591DEEE3D900EE33CC /* LButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6963D521DEEE3D900EE33CC /* LButton.cpp */; };
 		B6963D5A1DEEE3D900EE33CC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6963D541DEEE3D900EE33CC /* main.cpp */; };
-		B6963D5B1DEEE3D900EE33CC /* PriorityQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6963D551DEEE3D900EE33CC /* PriorityQueue.cpp */; };
 		B6963D5C1DEEE3D900EE33CC /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6963D571DEEE3D900EE33CC /* Square.cpp */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +38,6 @@
 		B6963D521DEEE3D900EE33CC /* LButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LButton.cpp; sourceTree = "<group>"; };
 		B6963D531DEEE3D900EE33CC /* LButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LButton.hpp; sourceTree = "<group>"; };
 		B6963D541DEEE3D900EE33CC /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		B6963D551DEEE3D900EE33CC /* PriorityQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PriorityQueue.cpp; sourceTree = "<group>"; };
 		B6963D561DEEE3D900EE33CC /* PriorityQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PriorityQueue.hpp; sourceTree = "<group>"; };
 		B6963D571DEEE3D900EE33CC /* Square.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Square.cpp; sourceTree = "<group>"; };
 		B6963D581DEEE3D900EE33CC /* Square.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Square.hpp; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 				B6963D521DEEE3D900EE33CC /* LButton.cpp */,
 				B6963D531DEEE3D900EE33CC /* LButton.hpp */,
 				B6963D541DEEE3D900EE33CC /* main.cpp */,
-				B6963D551DEEE3D900EE33CC /* PriorityQueue.cpp */,
 				B6963D561DEEE3D900EE33CC /* PriorityQueue.hpp */,
 				B6963D571DEEE3D900EE33CC /* Square.cpp */,
 				B6963D581DEEE3D900EE33CC /* Square.hpp */,
@@ -159,7 +156,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6963D5B1DEEE3D900EE33CC /* PriorityQueue.cpp in Sources */,
 				B6963D5A1DEEE3D900EE33CC /* main.cpp in Sources */,
 				B6963D5C1DEEE3D900EE33CC /* Square.cpp in Sources */,
 				B6963D591DEEE3D900EE33CC /* LButton.cpp in Sources */,

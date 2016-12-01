@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <vector>
+#include <string>
 
 class Empty {
 public:
@@ -19,50 +20,23 @@ public:
 
 template <typename T>
 class PriorityQueue {
-    friend std::ostream& operator<<(std::ostream& os, const PriorityQueue& rhs) {
-        for (const auto& item : rhs.heap) os << "F: " << item->FScore
-            << "; G: " << item->GScore << "; H: " << item->HScore << std::endl;
-        return os;
-    }
     
 public:
     void add(T val);
     T removeMin();
+    int size();
     bool isEmpty() const;
     void upheap(int index);
     void downHeap(int index);
+    std::vector<T>& getContainer();
     
-    std::vector<T>& getContainer() {
-        return heap;
-    }
-    
-    int size() {
-        return (int)heap.size();
-    }
-    
-    
-    //    priority_queue<T, Container, Compare>::container_type::const_iterator
-    //    find(T const& val) const {
-    //        auto first = this->c.cbegin();
-    //        auto last = this->c.cend();
-    //        while (first != last) {
-    //            if (*first == val)
-    //                return first;
-    //            ++first;
-    //        }
-    //        return last;
-    //    }
-    
-
 private:
     std::vector<T> heap;
-    
     int getParent(int index) const;
     int getLeftChild(int index) const;
     int getRightChild(int index) const;
     bool hasLeftChild(int index) const;
     bool hasRightChild(int index) const;
-    
     void swap(int a, int b);
 };
 
@@ -75,7 +49,7 @@ void PriorityQueue<T>::add(T val) {
 
 template <typename T>
 T PriorityQueue<T>::removeMin() {
-    if (isEmpty()) throw Empty("Priority queue is empty");
+    
     swap(0, (int)heap.size()-1);
     T val = heap.back();
     heap.pop_back();
@@ -102,10 +76,6 @@ template <typename T>
 void PriorityQueue<T>::upheap(int index) {
     if (index > 0) {
         int parent = getParent(index);
-        // std::cerr << "upheap: " << index << ' ' << heap[index].first
-        //      << ' ' << heap[index].second << "; "
-        //      << getParent(index) << ' ' << heap[parent].first
-        //           << ' ' << heap[parent].second << std::endl;
         if (heap[index]->FScore < heap[parent]->FScore) {
             swap(index, parent);
             upheap(parent);
@@ -157,9 +127,15 @@ void PriorityQueue<T>::downHeap(int index) {
     }
 }
 
+template <typename T>
+std::vector<T>& PriorityQueue<T>::getContainer() {
+    return heap;
+}
 
-
-
+template <typename T>
+int PriorityQueue<T>::size() {
+    return (int)heap.size();
+}
 
 
 #endif /* PriorityQueue_hpp */

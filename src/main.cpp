@@ -10,7 +10,7 @@
  |     Due Date:  Nov 19, 2016 11:55 pm
  |
  +-----------------------------------------------------------------------------
- |  Description:
+ |  Description: A demonstration program of the A* path-finding algorithm.
  |
  *===========================================================================*/
 #include <SDL2/SDL.h>
@@ -36,7 +36,7 @@ const int WINDOW_WIDTH = 900;
 const int WINDOW_HEIGHT = 500;
 SDL_Window* window = NULL;
 SDL_Renderer* renderer = NULL;
-const string FONT_PATH = "/Users/Kelvin/Desktop/Game_Programming/HW5PathFinding/A\*\ Demo/A\*\ Demo/Georgia.ttf";
+const string FONT_PATH = "/Users/Kelvin/Desktop/Game_Programming/HW5PathFinding/A\\*\\ Demo/A\\*\\ Demo/Georgia.ttf";
 
 //template<typename T> void print_queue(T& q);
 
@@ -101,7 +101,6 @@ int main(int argc, const char * argv[]) {
 
 
             SDL_Rect rect = { b.getPos().x, b.getPos().y, b.getButtonW(), b.getButtonH() };
-//            draw_text(FONT_PATH, "Start", &rect);
             b.render(renderer);
 
             for (vector<Square*> v : world) {
@@ -125,7 +124,6 @@ int main(int argc, const char * argv[]) {
                     
                     
                     Square* currentPoint = openList.removeMin();
-//                    print_square(currentPoint);  // Show current square
                     closedList.push_back(currentPoint);
                     
                     if (find(closedList.begin(), closedList.end(), endPoint) != closedList.end()) {
@@ -133,11 +131,7 @@ int main(int argc, const char * argv[]) {
                     }
                     
                     vector<Square*> adjacentSquares = currentPoint->getAdjacentSquares(world);
-//                    cout << "---Adjacent squares---" << endl;
-//                    print_vector(adjacentSquares);  // Show squares adjacent to the current square
-                    
-                    
-                    
+
                     for (Square* s : adjacentSquares)
                     {
                         if (find(closedList.begin(), closedList.end(), s) != closedList.end())
@@ -177,8 +171,6 @@ int main(int argc, const char * argv[]) {
                         if (first_item->FScore > s->FScore)
                             exit(1);
                     }
-                    
-//                    cout << "------------------------" << endl;
                 }
                 
                 cout << "<----Retrieving path---->" << endl;
