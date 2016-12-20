@@ -7,6 +7,7 @@
 //
 
 #include "Square.hpp"
+#include "math.h"
 
 std::vector<Square*> Square::getAdjacentSquares(std::vector<std::vector<Square*>>& world) {
     std::vector<Square*> tempV;
@@ -77,7 +78,7 @@ std::vector<Square*> Square::getAdjacentSquares(std::vector<std::vector<Square*>
 }
 
 void Square::calculateHeuristic(Square* endPoint) {
-    this->HScore = abs(endPoint->rowIndex - rowIndex) + abs(endPoint->colIndex - colIndex);
+    this->HScore = sqrt(pow(endPoint->rowIndex - rowIndex, 2) + pow(endPoint->colIndex - colIndex, 2));
 }
 
 void Square::handleEvent(SDL_Event* e) {

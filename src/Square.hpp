@@ -60,7 +60,6 @@ public:
     void handleEvent(SDL_Event* e);
     void calculateHeuristic(Square* endPoint);
     std::vector<Square*> getAdjacentSquares(std::vector<std::vector<Square*>>& world);
-
 };
 
 
